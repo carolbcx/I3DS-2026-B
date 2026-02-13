@@ -1,14 +1,14 @@
+import React from 'react'
 
-
-function Rodape({children}) {
+const Rodape=({children}) => {
   return (
     <footer>
-          <p>Feito pela <a href="https://github.com">{children}</a>
+          <p>Feito com ❤️ por <a href="https://github.com">{children}</a>
       
     </p>
     </footer>
 
-  )
-}
+  );
+};
 
 export default Rodape
