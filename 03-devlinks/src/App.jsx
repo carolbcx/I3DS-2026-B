@@ -1,18 +1,25 @@
 
+import { useState } from "react";
 import "./App.css"
 import Link from "./components/Link/Link";
 import Perfil from "./components/Perfil/Perfil"
 import Rodape from "./components/Rodape/Rodape";
 import SocialLink from "./components/SocialLink/SocialLink";
+import Switch from "./components/Switch/Switch";
 
 function App() {
+  const[isLight,setIsLight] = useState(true);
+
+  const troca = () => {
+    setIsLight(!isLight);
+  };
  
 
   return (
-    <div id="App">
+    <div id="App" className={isLight ? "light" : ""}>
       <Perfil fotoPerfil={"https://placehold.co/100"}>Caroline Barbosa</Perfil>
       
-      <div className="switch">botão switch</div>
+   <Switch troca={troca} isLight={isLight} />
 
       <div id="Link">
       <ul>
