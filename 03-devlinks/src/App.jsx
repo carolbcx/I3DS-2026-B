@@ -23,11 +23,13 @@ function App() {
       </ul>
 </div>
 
-      <div className="socialLinks"></div>
+      <div id="SocialLinks">
       <SocialLink url={"https://github.com"} icon={"logo-github"}/>
       <SocialLink url={"https://instagram.com"} icon={"logo-instagram"}/>
       <SocialLink url={"https://youtube.com"} icon={"logo-youtube"}/>
       <SocialLink url={"https://linkedin.com"} icon={"logo-linkedin"}/>
+</div>
+
       <div className="rodape"></div>
       <Rodape>AlunaCaroline</Rodape>
     </div>
