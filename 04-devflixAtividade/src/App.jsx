@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-import logo from "./assets/devflix.png";
-import lupa from "./assets/search.svg";
+import logo from "./assets/CineBox.png";
+import lupa from "./assets/Lupinha.png";
 
 import Rodape from "./components/Rodape/Rodape";
 import MovieCard from "./components/MovieCard/MovieCard";
@@ -26,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     const loadMovies = async () => {
-      await searchMovies(""); // termo para pesquina ao carregar o site
+      await searchMovies("Barbie"); // termo para pesquina ao carregar o site
     };
     loadMovies();
   }, []);
@@ -60,7 +60,7 @@ const App = () => {
           ))}
         </div>
       ) : (
-        <h2 className="empty">😢 Filme não encontrado 😢</h2>
+        <h2 className="empty"> Filme não encontrado! </h2>
       )}
 
       <Rodape link={"https://github.com/carolbcx"}>Caroline Barbosa</Rodape>
